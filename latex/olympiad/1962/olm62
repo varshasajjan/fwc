@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{1962/\thesection.}{1em}{}
+
+
+\begin{document}
+\begin{center}
+\begin{minipage}{0.2\textwidth}
+    \includegraphics[width=\linewidth]{iiit_logo.png} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.75\textwidth}
+    \centering
+    {\Large \textbf{Fourth International Olympiad, 1962}}\\[1ex]
+    \textbf{Name: Varshini G N} \\[0.5ex]
+    ID:COMETFWC031\\
+    \textbf{Date:} \today
+\end{minipage}
+\end{center}
+
+\vspace{1em}
+\title{Fourth International Olympiad, 1962}
+\hrule
+\vspace{1em}
+
+\textbf{1962/1.} \\
+\begin{itemize}
+    \item Find the smallest natural number $n$ which has the following properties:
+    \item[(a)] Its decimal representation has 6 as the last digit.
+    \item[(b)] If the last digit 6 is erased and placed in front of the remaining digits, the resulting number is four times as large as the original number $n$.
+
+\textbf{1962/2.} \\
+\item Determine all real numbers $x$ which satisfy the inequality:
+\begin{center}
+$\sqrt{3 - x} - \sqrt{x + 1} > \frac{1}{2}.$
+\end{center}
+
+\textbf{1962/3.} \\
+\item Consider the cube $ABCDA'A''B''C''D''$ (where $ABCD$ and $A'B'C'D'$ are the upper and lower bases, and edges $AA'$, $BB'$, $CC'$, $DD'$ are vertical).  
+The point $X$ moves at constant speed along the perimeter of square $ABCD$ in the direction $A \rightarrow B \rightarrow C \rightarrow D \rightarrow A$,  
+and the point $Y$ moves at the same speed along the perimeter of square $B'C'CBB'$ in the direction $B' \rightarrow C' \rightarrow C \rightarrow B \rightarrow B'$.  
+\item Points $X$ and $Y$ start simultaneously from positions $A$ and $B'$, respectively.
+
+\item Determine and draw the locus of the midpoints of the segments $XY$.
+
+\textbf{1962/4.} \\
+\item Solve the equation:
+\begin{center}
+$\cos^2 x + \cos^2 2x + \cos^2 3x = 1.$
+\end{center}
+
+\textbf{1962/5.} \\
+\item On the circle $K$, three distinct points $A$, $B$, and $C$ are given.  
+Construct (using only straightedge and compasses) a fourth point $D$ on $K$ such that a circle can be inscribed in the quadrilateral $ABCD$.
+
+\textbf{1962/6.} \\
+\item Consider an isosceles triangle. Let $r$ be the radius of its circumscribed circle and $\rho$ the radius of its inscribed circle.  
+Prove that the distance $d$ between the centers of these two circles is:
+\begin{center}
+d = \sqrt{r(r - 2\rho)}.
+\end{center}
+
+\textbf{1962/7.} \\
+\item The tetrahedron $SABC$ has the following property:  
+there exist five spheres, each tangent to the edges $SA$, $SB$, $SC$, $BC$, $CA$, $AB$, or to their extensions.
+
+\begin{itemize}
+    \item[(a)] Prove that the tetrahedron $SABC$ is regular.
+    \item[(b)] Prove conversely that for every regular tetrahedron, five such spheres exist.
+\end{itemize}
+
+\end{document}

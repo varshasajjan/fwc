@@ -1,0 +1,1 @@
+This is the solution for GATE Question 49, 2018 of Computer Science

@@ -33,9 +33,11 @@ pio init --board uno
 
 Create a nano file inside source in the directory and run Platform IO:
 ```bash
+# Write the program inside the nano file and save (Ctrl+O), Enter, Exit from the nano file(Ctrl+O)
 nano src/main.cpp
+To run the program smoothly and compile:
 pio run
-
+```
 # After the .hex file is created, copy and move it to the folder where arduino droid can easily access your compiled file
 cp .pio/build/uno/firmware.hex /sdcard/Download/firmware_uno.hex
 ```

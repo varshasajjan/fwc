@@ -1,0 +1,108 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{array}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+\begin{minipage}{0.20\textwidth}
+    \includegraphics[width=\linewidth]{iiit_logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.75\textwidth}
+    \centering
+    {\Large \textbf{GATE 2018 Question}\\[1ex]}
+    {\textbf{Name: Varshini G N}\\[0.5ex]}
+    {ID: COMETFWC031}\\[0.5ex]
+    \textbf{Date:} \today
+\end{minipage}
+\end{center}
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\section*{GATE 2018 CS Q49}
+
+Consider the minterm list form of a Boolean function \( F \) given below.
+\[
+F(P, Q, R, S) = \sum m(0, 2, 5, 7, 9, 11) + d(3, 8, 10, 12, 14)
+\]
+
+Here, \( m \) denotes a minterm and \( d \) denotes a don't care term. The number of essential prime implicants of the function \( F \) is \_\_\_\_\_.
+
+\vspace{1em}
+
+\subsection*{Solution}
+
+\subsubsection*{Truth Table}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Decimal & P & Q & R & S & F \\
+\hline
+0  & 0 & 0 & 0 & 0 & 1   \\
+1  & 0 & 0 & 0 & 1 & 0   \\
+2  & 0 & 0 & 1 & 0 & 1   \\
+3  & 0 & 0 & 1 & 1 & X   \\
+4  & 0 & 1 & 0 & 0 & 0   \\
+5  & 0 & 1 & 0 & 1 & 1   \\
+6  & 0 & 1 & 1 & 0 & 0   \\
+7  & 0 & 1 & 1 & 1 & 1   \\
+8  & 1 & 0 & 0 & 0 & X   \\
+9  & 1 & 0 & 0 & 1 & 1   \\
+10 & 1 & 0 & 1 & 0 & X   \\
+11 & 1 & 0 & 1 & 1 & 1   \\
+12 & 1 & 1 & 0 & 0 & X   \\
+13 & 1 & 1 & 0 & 1 & 0   \\
+14 & 1 & 1 & 1 & 0 & X   \\
+15 & 1 & 1 & 1 & 1 & 0   \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{1ex}
+
+\subsubsection*{K-Map Representation (4 Variables)}
+
+Below is one possible K-map arrangement (\(PQ\) as rows, \(RS\) as columns):
+
+\[
+\begin{array}{c|cccc}
+PQ\backslash RS & 00 & 01 & 11 & 10 \\
+\hline
+00 & 1  & 0 & X & 1 \\
+01 & 0  & 1 & 1 & 0 \\
+11 & X  & 0 & 0 & X \\
+10 & X  & 1 & 1 & X \\
+\end{array}
+\]
+
+\textbf{Legend:} ‘1’ = Minterm, ‘X’ = Don't care, ‘0’ = Not included.
+
+\vspace{1ex}
+
+\subsubsection*{Essential Prime Implicant Calculation}
+
+Prime implicant groups:
+\begin{itemize}
+    \item Group 1: Covers minterms 0, 2 (essential)
+    \item Group 2: Covers minterms 5, 7 (essential)
+    \item Group 3: Covers minterms 9, 11 (essential)
+\end{itemize}
+
+So, the number of essential prime implicants is:
+\[
+\boxed{3}
+\]
+
+\textbf{Final Answer:} There are \textbf{3 essential prime implicants}.
+
+\end{document}

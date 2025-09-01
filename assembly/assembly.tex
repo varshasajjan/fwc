@@ -1,0 +1,90 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multicol}
+
+% Remove default headers/footers
+\pagestyle{empty}
+
+\begin{document}
+
+% Header with logo (left) and details (right)
+\noindent
+\begin{minipage}{0.2\linewidth}
+    \includegraphics[width=2cm]{iiit_logo.png} % <-- replace with your logo file
+\end{minipage}
+\hfill
+\begin{minipage}{0.7\linewidth}
+    \begin{flushright}
+        \textbf{Name: Varshini G N} \\ 
+        \textbf{ID: COMETFWC031} \\ 
+        \textbf{Date: August 31, 2025} \\
+    \end{flushright}
+\end{minipage}
+
+\vspace{1cm}
+
+% Title
+\begin{center}
+    {\LARGE \textbf{GATE 2019 CS PAPER Question 06}} \\
+\end{center}
+
+\vspace{0.5cm}
+
+% ----------------- Content -----------------
+\section*{Question}
+Consider the following Boolean identities. Determine which of them are valid:
+
+\begin{enumerate}
+    \item[(A)] $(x \oplus y) \oplus z = x \oplus (y \oplus z)$
+    \item[(B)] $(x + y) \oplus z = x \oplus (y + z)$
+    \item[(C)] $x \oplus y = x + y \quad \text{if } xy = 0$
+    \item[(D)] $x \oplus y = (xy + x'y')'$
+\end{enumerate}
+
+\section*{Answer}
+
+\subsection*{(A) Valid}
+XOR is associative. $(x \oplus y) \oplus z = x \oplus (y \oplus z)$ always holds.
+
+\subsection*{(B) Not valid}
+Counterexample: $x=1,y=1,z=0$.  
+LHS = $(1+1)\oplus 0 = 1 \oplus 0 = 1$  
+RHS = $1 \oplus (1+0) = 1 \oplus 1 = 0$  
+So they differ.
+
+Truth table:
+
+\[
+\begin{array}{|c|c|c|c|c|}
+\hline
+x & y & z & (x+y)\oplus z & x \oplus (y+z) \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & 0 & 0 \\
+\hline
+\end{array}
+\]
+
+\subsection*{(C) Valid}
+If $xy=0$, then $x$ and $y$ are not both 1. In that case $x\oplus y = x+y$.  
+
+\subsection*{(D) Valid}
+\[
+(xy + x'y')' = (x'y + xy') = x \oplus y
+\]
+
+Hence (A), (C), (D) are valid; (B) is not.
+
+\end{document}

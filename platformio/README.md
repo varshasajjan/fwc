@@ -33,7 +33,7 @@ pio init --board uno
 
 Create a nano file inside source in the directory and run Platform IO:
 ```bash
-# Write the program inside the nano file and save (Ctrl+O), Enter, Exit from the nano file(Ctrl+O)
+# Write the program inside the nano file and save (Ctrl+O), Enter, Exit from the nano file(Ctrl+X)
 nano src/main.cpp
 
 #To run the program smoothly and compile:

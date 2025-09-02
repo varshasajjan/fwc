@@ -27,7 +27,7 @@ nano filename.c #Create a .c file and write a program (CTRL+O, Enter, CTRL+X)
 ```
 To compile and convert it to .hex file from .elf, run these commands:
 ```bash
-avr-gcc -mmcu=atmega328p -Os -o blink.elf blink.c
-avr-objcopy -O ihex -R .eeprom blink.elf blink.hex
+avr-gcc -mmcu=atmega328p -Os -o filename.elf filename.c
+avr-objcopy -O ihex -R .eeprom filename.elf filename.hex
 ```
 Copy and rename your .hex file to execute precompiled program in arduino droid to show output on arduino.

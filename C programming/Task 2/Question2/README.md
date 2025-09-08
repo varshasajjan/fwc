@@ -1,0 +1,1 @@
+# Return a structure with addition, subtraction, multiplication, quotient and reminder of 2 integers, sent to a function as arguments. Quotient should be a floating point result. All the results to be printed in main function.

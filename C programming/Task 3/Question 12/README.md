@@ -6,3 +6,4 @@ To compile and run the C program inside termux on android, use these commands:
 nano filename.c
 gcc ilename.c -o filename
 ./filename
+```

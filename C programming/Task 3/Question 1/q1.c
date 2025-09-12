@@ -12,6 +12,6 @@ int main() {
     printf("Enter principle, rate, time(in months): ");
     scanf("%f %f %d", &p, &r, &t);
 
-    printf("Total amount to be repaid = %.2f\n", calc_amount(p, r, t));
+    printf("Total amount tto be repaid = %.2f\n", calc_amount(p, r, t));
     return 0;
 }

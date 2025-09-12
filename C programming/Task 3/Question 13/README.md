@@ -5,3 +5,4 @@ To compile and run C program smoothly on termux terminal, use these commands:
 nano filename.c
 clang filename.c -o filename
 ./filename
+```

@@ -1,0 +1,7 @@
+set_io G  P7      # Assign input G to switch at pin P7
+set_io A  P8      # Assign input A to switch at pin P8
+set_io B  P9      # Assign input B to switch at pin P9
+set_io P  P10     # Assign input P to switch at pin P10
+set_io C  P11     # Assign input C to switch at pin P11
+set_io X  L1      # Assign output X to LED at pin L1
+set_io Y  L2      # Assign output Y to LED at pin L2

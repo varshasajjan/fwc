@@ -1,0 +1,3 @@
+set_io clk   P7    # Clock input pin from switch or onboard clock
+set_io d     P8    # Data input from switch
+set_io q     L1    # LED output pin

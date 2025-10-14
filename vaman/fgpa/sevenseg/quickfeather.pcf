@@ -1,0 +1,14 @@
+set_io G    P7
+set_io A    P8
+set_io B    P9
+set_io P    P10
+set_io C    P11
+set_io seg[0] S0   # 'a' segment
+set_io seg[1] S1   # 'b'
+set_io seg[2] S2   # 'c'
+set_io seg[3] S3   # 'd'
+set_io seg[4] S4   # 'e'
+set_io seg[5] S5   # 'f'
+set_io seg[6] S6   # 'g'
+set_io digit[0] D0 # digit 0
+set_io digit[1] D1 # digit 1

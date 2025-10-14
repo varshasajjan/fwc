@@ -1,0 +1,4 @@
+set_io A P7
+set_io B P8
+set_io C P9
+set_io Y L1

@@ -1,0 +1,9 @@
+set_io G         P7
+set_io A         P8
+set_io B         P9
+set_io P         P10
+set_io C         P11
+set_io bcd_out[3] K1   # D pin on 7447
+set_io bcd_out[2] K2   # C pin on 7447
+set_io bcd_out[1] K3   # B pin on 7447
+set_io bcd_out[0] K4   # A pin on 7447
